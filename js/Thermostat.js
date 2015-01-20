@@ -3,5 +3,14 @@ var Thermostat = function() {
 };
 
 Thermostat.prototype.changeTemperature = function(changeTempBy) {
-  return this.temperature += changeTempBy;
+
+  this.temperature += changeTempBy;
+
+  if (this.temperature < 10) {
+    this.temperature = 10
+    return "Cannot decrease below ten"
+  }
+  else {
+    return this.temperature
+  }
 };
