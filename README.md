@@ -1,3 +1,7 @@
+## Mini JS project: Thermostat
+
+# Task
+
 - Thermostat starts at 20 degrees
 - You can increase the temp with the up button
 - You can decrease the temp with the down button
@@ -7,3 +11,16 @@
 - Power saving mode is on by default
 - You can reset the temperature to 20 by hitting the reset button
 - Thermostat should color the display based on energy usage - < 18 is green, < 25 is yellow, otherwise red
+
+## Context
+
+Week 5 mini project at Makers Academy
+
+## Resources
+
+- JavaScript
+- Jasmin
+
+## Contributors
+
+- Bibiana Cristòfol
