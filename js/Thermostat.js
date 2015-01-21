@@ -48,4 +48,8 @@ Thermostat.prototype.energyMode = function() {
   if(this.temperature < 18) {
     return this.energy = "low"
   } 
+
+  else if(this.powerSavingMode === false && this.temperature > 25) {
+    return this.energy = "high"
+  }
 };

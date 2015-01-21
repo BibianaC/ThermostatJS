@@ -75,6 +75,13 @@ describe("Thermostat", function() {
       expect(thermostat.energy).toBe("low");
     });
 
+    it("should be high when above 25", function() {
+      thermostat.powerSavingSwitch("Off");
+      thermostat.changeTemperature(6);
+      thermostat.energyMode();
+      expect(thermostat.energy).toBe("high");
+    });
+
   });
 
 });
