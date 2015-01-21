@@ -7,12 +7,11 @@ var Thermostat = function() {
 Thermostat.prototype.powerSavingSwitch = function(mode){
   if (mode === "On"){
     this.powerSavingMode = true
+    this.changeTemperature(0);
   }
   else if (mode === "Off"){
     this.powerSavingMode = false
-  }
-  else {
-    return "Please specify On or Off"
+    this.changeTemperature(0);
   }
 };
 
@@ -25,7 +24,7 @@ Thermostat.prototype.changeTemperature = function(changeTempBy) {
     return "Cannot increase above 25"
   }
 
-  if (this.powerSavingMode === false && this.temperature > 32){
+  else if (this.powerSavingMode === false && this.temperature > 32){
     this.temperature = 32
     return "Cannot increase above 32"
   }

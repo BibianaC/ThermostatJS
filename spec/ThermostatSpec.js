@@ -65,6 +65,14 @@ describe("Thermostat", function() {
       expect(thermostat.temperature).toEqual(32);
     });
 
+    it("", function() {
+      thermostat.powerSavingSwitch("Off");
+      expect(thermostat.changeTemperature(15));
+      thermostat.powerSavingSwitch("On");
+      expect(thermostat.temperature).toEqual(25);
+
+    });
+
   });
 
   describe("thermostat energy", function() {
