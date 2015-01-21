@@ -19,7 +19,7 @@ Week 5 mini project at Makers Academy
 ## Resources
 
 - JavaScript
-- Jasmin
+- Jasmine
 
 ## Contributors
 
