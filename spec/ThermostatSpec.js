@@ -54,7 +54,6 @@ describe("Thermostat", function() {
       expect(thermostat.powerSavingMode).toBe(false);
     });
 
-
     it("should have a max temp of 25", function(){
       expect(thermostat.changeTemperature(6)).toBe("Cannot increase above 25");
       expect(thermostat.temperature).toEqual(25);
@@ -65,6 +64,13 @@ describe("Thermostat", function() {
       thermostat.changeTemperature(6);
       expect(thermostat.temperature).toEqual(26);
     });
+
+    it("should have a max temp of 32 when off", function(){
+      thermostat.powerSavingSwitch("Off");
+      expect(thermostat.changeTemperature(15)).toBe("Cannot increase above 32");
+      expect(thermostat.temperature).toEqual(32);
+    });
+
   });
 
 });
