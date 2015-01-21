@@ -1,6 +1,7 @@
 var Thermostat = function() {
   this.temperature = 20;
   this.powerSavingMode = true;
+  this.energy = "medium";
 };
 
 Thermostat.prototype.powerSavingSwitch = function(mode){
@@ -40,4 +41,11 @@ Thermostat.prototype.changeTemperature = function(changeTempBy) {
 
 Thermostat.prototype.resetTemperature = function() {
   this.temperature = 20;
+};
+
+Thermostat.prototype.energyMode = function() {
+
+  if(this.temperature < 18) {
+    return this.energy = "low"
+  } 
 };

@@ -67,4 +67,14 @@ describe("Thermostat", function() {
 
   });
 
+  describe("thermostat energy", function() {
+
+    it("should be low when below 18", function() {
+      thermostat.changeTemperature(-4);
+      thermostat.energyMode();
+      expect(thermostat.energy).toBe("low");
+    });
+
+  });
+
 });
