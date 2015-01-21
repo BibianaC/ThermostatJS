@@ -52,4 +52,7 @@ Thermostat.prototype.energyMode = function() {
   else if(this.powerSavingMode === false && this.temperature > 25) {
     return this.energy = "high"
   }
+  else {
+    return this.energy = "medium"
+  }
 };
