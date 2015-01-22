@@ -1,3 +1,4 @@
+console.log('Hello');
 var thermostat = new Thermostat();
 
 var updateTemperature = function() {

@@ -1,28 +1,9 @@
 @import url('reset.css');
-
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url('grid.css');
 
 html, body {
   height: 100%;
-}
-
-.grid {
   font-family: 'Lucida Sans Typewriter', Helvetica;
-}
-
-.left {
-  width: 58.35%;
-  text-align: right;
-  float: left;
-}
-
-.right{
-  width: 41.65%;
-  float: left;
-  background-color: black;
 }
 
 h1 {
