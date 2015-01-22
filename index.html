@@ -11,17 +11,22 @@
   <body>
 
     <main class="grid">
-      <h1 class="medium-usage">
-        <span id="temperature">??</span>º
-      </h1>
-      <h2 class="degrees"></h2>
-      <button class='increase-temp'>△</button>
-      <button class='decrease-temp'>▽</button>
-      <button class='reset'>reset</button>
-      <br>
-      <h3>Power Saving Mode</h3>
-      <button class='PSM-on'>ON</button>
-      <button class='PSM-off'>OFF</button>
+      <section class="left">
+        <h1 class="medium-usage">
+          <span id="temperature">??</span>
+        </h1>
+        <button class='increase-temp'>+</button>
+        <button class='decrease-temp'>-</button>
+        <button class='reset'>reset</button>
+        <br>
+        <h3>power saving mode</h3>
+        <button class='PSM-on'>on</button><br>
+        <button class='PSM-off'>off</button>
+      </section>
+
+      <section class="right">
+        <h2 class="degrees">degrees</h2>
+      </section>
     </main>
 
     <script src="https:///code.jquery.com/jquery-1.11.2.js"></script>
