@@ -4,16 +4,16 @@ var thermostat = new Thermostat();
 var updateTemperature = function() {
   $('#temperature').text(thermostat.temperature);
   $('h1').each(function(){
-  if (thermostat.energy === "low"){
-    $('h1').css('color', 'green')
-  }
-  else if (thermostat.energy === "medium"){
-    $('h1').css('color', 'yellow')
-  }
-  else {
-    $('h1').css('color', 'red')
-  }
-});
+    if (thermostat.energy === "low"){
+      $('h1').css('color', 'green')
+    }
+    else if (thermostat.energy === "medium"){
+      $('h1').css('color', 'yellow')
+    }
+    else {
+      $('h1').css('color', 'red')
+    }
+  });
 };
 
 $(document).ready(function() {
